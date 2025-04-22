@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Reem Ahrabar
+Date: April 21, 2025
+File Name: apply07.css
 */
 
 /* CSS Reset */
@@ -16,7 +16,7 @@ body {
 	background-color: #c8dbE3;
 }
 
-/* Style rules for mobile viewport */
+/* Style rules for mobile viewport *
 
 /* Style rule for header */
 header {
@@ -49,6 +49,36 @@ main {
 	background-color: #fff;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 25%;
+  justify-content: space-evenly;
+  align-items: space-around;
+  margin-bottom: 25px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+section {
+  background-color: #183440;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: 'Arial';
+  color: white;
+}
+
+aside {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #183440;
+  box-shadow: 0 5px 15px black;
+  background-color: #B9C1C5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
 footer {
 	font-size: .70em;
 	text-align: center;
@@ -57,11 +87,23 @@ footer {
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 650px), print {
     
-    
+    .grid {
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 40% 40%;
+}
+  aside {
+    grid-column-end: 3;
+  }
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
 
-    
+  .grid {
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 40% 40%;
+}    
+  aside {
+    grid-column-end: 4;
+  }
 }
